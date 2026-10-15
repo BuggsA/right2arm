@@ -13,6 +13,7 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/favicon-48.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/photos/hero-athlete.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Permanent+Marker&display=swap">
@@ -22,29 +23,46 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar wrap">
-  <a class="mini-brand" href="/">Right to Arms <span>LLC</span></a>
+  <a class="mini-brand" href="/"><img src="/assets/logo-badge.webp" alt="" width="40" height="40">Right to Arms <span>LLC</span></a>
   <nav aria-label="Main">
     <a href="#services">Services</a>
     <a href="#included">Included</a>
     <a href="#contact">Contact</a>
   </nav>
+  <a class="btn-ink btn-small" href="#contact">Book a class</a>
 </header>
 
 <main id="main">
   <section class="hero wrap">
-    <img class="stamp" src="/assets/logo-badge.webp" alt="Right to Arms LLC logo: two crossed arms making peace signs" width="320" height="320">
-    <h1>
-      <span class="line">It's your right,</span>
-      <span class="line accent">exercise it!
-        <svg class="swash" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11c38-6 84-8 130-6s96 5 164-3"/></svg>
-      </span>
-    </h1>
-    <p class="intro">Carry permit classes, renewals and hands-on help for new firearm owners. Take the CCW course and the firearms, ammo, safety gear and paperwork help are on us.</p>
-    <div class="hero-actions">
-      <a class="btn-ink" href="#services">See the services</a>
-      <a class="link-hand" href="mailto:right2armsllc@gmail.com">or email to book</a>
+    <div class="hero-copy">
+      <p class="eyebrow">Firearms training &middot; Carry permits &middot; New owners</p>
+      <h1>
+        <span class="line">It's your right,</span>
+        <span class="line accent">exercise it!
+          <svg class="swash" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11c38-6 84-8 130-6s96 5 164-3"/></svg>
+        </span>
+      </h1>
+      <p class="intro">Carry permit classes, renewals and hands-on help for new firearm owners. Take the CCW course and the firearms, ammo, safety gear and paperwork help are on us.</p>
+      <div class="hero-actions">
+        <a class="btn-ink" href="#services">See the services</a>
+        <a class="link-hand" href="mailto:right2armsllc@gmail.com">or email to book</a>
+      </div>
+    </div>
+
+    <div class="collage">
+      <figure class="print print-a"><img src="/assets/photos/hero-athlete.webp" alt="Shooter aiming a pistol on a range line" width="1100" height="734"></figure>
+      <figure class="print print-b"><img src="/assets/photos/hero-friends.webp" alt="Two friends with ear protection at an outdoor range" width="760" height="506"></figure>
+      <figure class="print print-c"><img src="/assets/photos/hero-flatlay.webp" alt="Pistol and ammunition laid out on a cloth" width="760" height="506"></figure>
+      <img class="sticker" src="/assets/logo-badge.webp" alt="Right to Arms LLC logo: two crossed arms making peace signs" width="150" height="150">
     </div>
   </section>
+
+  <div class="ribbon-wrap" aria-hidden="true"><div class="ribbon">
+    <div class="ribbon-track">
+      <span>CCW/HGP Prep &#10038; CCW/HGP Class &#10038; CCW Renewal &#10038; HGP Only &#10038; Firearm Testing &amp; Selection &#10038; Post-Purchase Cleaning &#10038;&nbsp;</span>
+      <span>CCW/HGP Prep &#10038; CCW/HGP Class &#10038; CCW Renewal &#10038; HGP Only &#10038; Firearm Testing &amp; Selection &#10038; Post-Purchase Cleaning &#10038;&nbsp;</span>
+    </div>
+  </div></div>
 
   <section id="services" class="services wrap" aria-labelledby="services-title">
     <h2 id="services-title" class="marker-title">Pick your class</h2>
@@ -63,9 +81,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>A warm-up session before the full carry permit course. It covers safe handling and the fundamentals, so you walk into class confident instead of nervous.</p>
-            <p class="note">Optional, but recommended before the CCW/HGP Class.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%2FHGP%20Prep">Book this class</a>
+            <figure class="print print-sm"><img src="/assets/photos/ccw-hgp-prep.webp" alt="Student wearing ear protection listening to instruction" width="900" height="604" loading="lazy"></figure>
+            <div>
+              <p>A warm-up session before the full carry permit course. It covers safe handling and the fundamentals, so you walk into class confident instead of nervous.</p>
+              <p class="note">Optional, but recommended before the CCW/HGP Class.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%2FHGP%20Prep">Book this class</a>
+            </div>
           </div>
         </details>
 
@@ -78,9 +99,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>The complete course for your carry permit: classroom first, then live fire at the range on Day 2. Firearms, ammo and safety gear are provided, so you don't need to own a firearm to take it.</p>
-            <p class="note">The range fee is due on Day 2. Everything on the free list below comes with this course.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%2FHGP%20Class">Book this class</a>
+            <figure class="print print-sm"><img src="/assets/photos/ccw-hgp-class.webp" alt="Shooter firing a pistol at an outdoor range" width="900" height="600" loading="lazy"></figure>
+            <div>
+              <p>The complete course for your carry permit: classroom first, then live fire at the range on Day 2. Firearms, ammo and safety gear are provided, so you don't need to own a firearm to take it.</p>
+              <p class="note">The range fee is due on Day 2. Everything on the free list below comes with this course.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%2FHGP%20Class">Book this class</a>
+            </div>
           </div>
         </details>
 
@@ -93,9 +117,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>Already have your permit? The renewal course keeps it active and your skills sharp.</p>
-            <p class="note">Get in touch when your renewal date is coming up.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%20Renewal">Book this class</a>
+            <figure class="print print-sm"><img src="/assets/photos/ccw-renewal.webp" alt="Paper targets hanging at an indoor range" width="900" height="600" loading="lazy"></figure>
+            <div>
+              <p>Already have your permit? The renewal course keeps it active and your skills sharp.</p>
+              <p class="note">Get in touch when your renewal date is coming up.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20CCW%20Renewal">Book this class</a>
+            </div>
           </div>
         </details>
 
@@ -108,9 +135,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>Handgun permit (HGP) training without the full CCW package.</p>
-            <p class="note">Not sure if this is the right one? Ask before you book.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20HGP%20Only">Book this class</a>
+            <figure class="print print-sm"><img src="/assets/photos/hgp-only.webp" alt="Holster, pistol and magazine laid out on a table" width="900" height="600" loading="lazy"></figure>
+            <div>
+              <p>Handgun permit (HGP) training without the full CCW package.</p>
+              <p class="note">Not sure if this is the right one? Ask before you book.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20HGP%20Only">Book this class</a>
+            </div>
           </div>
         </details>
 
@@ -123,9 +153,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>Try different firearms with an instructor beside you before you spend your money, and leave knowing what fits your hand, your needs and your budget.</p>
-            <p class="note">CCW students get ammo for all live-fire appointments, plus help with the purchase paperwork.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20Firearm%20Testing%20%26%20Selection">Book this session</a>
+            <figure class="print print-sm"><img src="/assets/photos/firearm-testing-selection.webp" alt="Several pistols laid out side by side" width="900" height="600" loading="lazy"></figure>
+            <div>
+              <p>Try different firearms with an instructor beside you before you spend your money, and leave knowing what fits your hand, your needs and your budget.</p>
+              <p class="note">CCW students get ammo for all live-fire appointments, plus help with the purchase paperwork.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20Firearm%20Testing%20%26%20Selection">Book this session</a>
+            </div>
           </div>
         </details>
 
@@ -138,9 +171,12 @@
             <span class="toggle" aria-hidden="true"></span>
           </summary>
           <div class="detail">
-            <p>Just bought a firearm? Learn how it works, how to take it apart, clean it and put it back together safely.</p>
-            <p class="note">CCW students get their first cleaning materials free.</p>
-            <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20Post-Purchase%20Familiarity%20%26%20Cleaning">Book this session</a>
+            <figure class="print print-sm"><img src="/assets/photos/post-purchase-familiarity-cleaning.webp" alt="Gloved hands cleaning firearm parts at a bench" width="900" height="600" loading="lazy"></figure>
+            <div>
+              <p>Just bought a firearm? Learn how it works, how to take it apart, clean it and put it back together safely.</p>
+              <p class="note">CCW students get their first cleaning materials free.</p>
+              <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Booking%20request%3A%20Post-Purchase%20Familiarity%20%26%20Cleaning">Book this session</a>
+            </div>
           </div>
         </details>
 
@@ -164,11 +200,22 @@
         <li class="wide">A walkthrough of the pre- and post-purchase paperwork and state/federal filings</li>
       </ul>
     </div>
+    <figure class="print print-side">
+      <img src="/assets/photos/earplug.webp" alt="Close-up of a student putting in ear protection" width="1000" height="666" loading="lazy">
+      <figcaption>Ear &amp; eye protection? On us.</figcaption>
+    </figure>
   </section>
 
-  <section class="groups wrap" aria-labelledby="groups-title">
-    <h2 id="groups-title">Bringing the family? Ask about <mark>group rates.</mark></h2>
-    <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Family%20%2F%20group%20rate%20request">Ask for a group quote</a>
+  <section class="together" aria-labelledby="groups-title">
+    <img class="together-photo" src="/assets/photos/group.webp" alt="A group of friends training together at a range" width="1800" height="1082" loading="lazy">
+    <div class="wrap">
+      <div class="label">
+        <span class="tape tape-l" aria-hidden="true"></span>
+        <h2 id="groups-title">Bringing the family? Ask about <mark>group rates.</mark></h2>
+        <p>Train with a friend, your partner or the whole crew. Family and group pricing is available on request.</p>
+        <a class="link-hand" href="mailto:right2armsllc@gmail.com?subject=Family%20%2F%20group%20rate%20request">Ask for a group quote</a>
+      </div>
+    </div>
   </section>
 
   <section class="about wrap" aria-labelledby="about-title">

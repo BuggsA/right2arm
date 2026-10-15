@@ -5,7 +5,7 @@ Three different designs with the same content, so the client can compare styles 
 | Folder | Subdomain | Style | How services open |
 | --- | --- | --- | --- |
 | `site-1-classic/` | `1.yourdomain.com` | The mentor's layout, upgraded: tabbed menu, mission-style hero, "Choose your service" banner, photo cards with Book Now. | Each card opens its own class page (`/classes/...`) |
-| `site-2-handmade/` | `2.yourdomain.com` | Paper, ink and brush lettering taken from the logo. One page. | Services list styled as a receipt; tap a row to expand it |
+| `site-2-handmade/` | `2.yourdomain.com` | Handmade poster style from the logo: paper, brush lettering, taped photo prints toned black and orange. One page. | Services list styled as a receipt; tap a row to open its photo and details |
 | `site-3-guided/` | `3.yourdomain.com` | Bright and modern, like a booking app. One page. | "Where are you starting?" picker shows only the classes for that path |
 
 All three are plain HTML and CSS with no build step and no dependencies. Site 3 uses a small script for the picker, and still works without it.
@@ -39,7 +39,7 @@ While these are concepts, every page sends `noindex` (in `public/_headers` and a
 
 All copy comes from the client's texts: services, prices, the free extras with the CCW course, family and group rates, the slogan, the email, and the `@right2armsllc` handle. Short service descriptions were written to fill out the details and need the client's sign-off.
 
-Site 1 uses free stock photos from Unsplash as stand-ins. They're listed in `site-1-classic/PHOTO-CREDITS.md` and should be replaced with the client's own photos.
+Sites 1 and 2 use free stock photos from Unsplash as stand-ins, a different set for each. They're listed in each folder's `PHOTO-CREDITS.md` and should be replaced with the client's own photos.
 
 Booking is done by email for now. Every **Book** button opens an email with the class name already in the subject line. A scheduler (Calendly, Square Appointments) or Stripe payment links can be added later.
 
@@ -52,5 +52,5 @@ In `site-1-classic`, each price and description appears in up to three places: t
 - **Phone number:** should one be on the site?
 - **HGP Only:** what does it include, and how is it different from the CCW/HGP Class?
 - **Class details:** class lengths and how dates are scheduled.
-- **Photos:** class and range photos, including the instructor. These would replace the stock photos on site 1.
+- **Photos:** class and range photos, including the instructor. These would replace the stock photos on sites 1 and 2.
 - **Logo:** the original logo file. The current one was cut from a screenshot.
