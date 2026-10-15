@@ -1,0 +1,14 @@
+// Concept 2: static site served by Cloudflare Workers (assets only, no script).
+// Deploy from this folder with: npx wrangler deploy
+{
+  "name": "right2arms-2",
+  "compatibility_date": "2025-10-01",
+  // To serve this concept on its subdomain, uncomment the next line and replace
+  // example.com with your domain. Cloudflare creates the DNS record for you.
+  // "routes": [{ "pattern": "2.example.com", "custom_domain": true }],
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
