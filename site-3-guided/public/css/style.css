@@ -277,3 +277,25 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Hanging badge logo: sits in a white disc that hangs below the header,
+   like an app avatar, and shrinks into the bar once you scroll. */
+html { scroll-padding-top: 100px; }
+.header-row { position: relative; min-height: 78px; }
+.brand { padding-left: 146px; transition: padding-left 0.25s; }
+.brand img {
+  position: absolute; z-index: 3; left: 20px; top: 10px; width: 130px; height: 130px;
+  border-radius: 50%; background: #fff; box-shadow: 0 0 0 5px #fff, 0 14px 32px rgba(23, 20, 15, 0.18);
+  transition: width 0.25s, height 0.25s, top 0.25s, box-shadow 0.25s;
+}
+.site-header.is-scrolled .brand { padding-left: 72px; }
+.site-header.is-scrolled .brand img { width: 56px; height: 56px; top: 11px; box-shadow: 0 0 0 2px #fff; }
+.hero { padding-top: 104px; }
+@media (max-width: 480px) {
+  .header-row { min-height: 68px; }
+  .brand { padding-left: 104px; font-size: 1.3rem; }
+  .brand img { width: 92px; height: 92px; top: 8px; }
+  .site-header.is-scrolled .brand { padding-left: 62px; }
+  .site-header.is-scrolled .brand img { width: 48px; height: 48px; top: 10px; }
+  .hero { padding-top: 64px; }
+}

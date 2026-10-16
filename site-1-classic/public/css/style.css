@@ -356,3 +356,21 @@ p { margin: 0 0 1em; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Hanging badge logo: the menu bar stays slim and the round logo hangs
+   below it like a patch. It shrinks back into the bar once you scroll. */
+@media (min-width: 901px) {
+  html { scroll-padding-top: 110px; }
+  .header-row { min-height: 80px; }
+  .brand { position: relative; padding-left: 172px; transition: padding-left 0.25s; }
+  .brand img {
+    position: absolute; z-index: 3; left: 0; top: 10px; width: 156px; height: 156px; margin: 0;
+    border-radius: 50%; box-shadow: 0 0 0 5px var(--ink), 0 0 0 7px var(--orange), 0 16px 34px rgba(0, 0, 0, 0.55);
+    transition: width 0.25s, height 0.25s, top 0.25s;
+  }
+  .site-header.is-scrolled .brand { padding-left: 80px; }
+  .site-header.is-scrolled .brand img { width: 62px; height: 62px; top: 9px; box-shadow: 0 0 0 3px var(--orange); }
+  .hero-logo { display: none; }
+  .hero > .wrap { padding-top: 124px; }
+  .page-hero .wrap { padding-top: 116px; }
+}

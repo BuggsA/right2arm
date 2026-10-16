@@ -39,7 +39,7 @@ p { margin: 0 0 1em; }
 .topbar { display: flex; align-items: center; gap: 24px; padding-top: 16px; padding-bottom: 16px; }
 .mini-brand { display: flex; align-items: center; gap: 12px; margin-right: auto; font: 400 1.75rem/1 var(--marker); letter-spacing: 0.01em; text-decoration: none; }
 .mini-brand img { width: 108px; height: 108px; }
-.mini-brand span { color: var(--rust); }
+.mini-brand .brand-text > span { color: var(--rust); }
 .topbar nav { display: flex; gap: 22px; }
 .topbar nav a { font-weight: 600; font-size: 0.97rem; text-decoration: none; border-bottom: 2px solid transparent; }
 .topbar nav a:hover { border-bottom-color: var(--orange); }
@@ -48,7 +48,7 @@ p { margin: 0 0 1em; }
   .mini-brand { gap: 8px; font-size: 1.2rem; white-space: nowrap; }
   .topbar { gap: 12px; }
   .mini-brand img { width: 72px; height: 72px; }
-  .mini-brand span { display: none; }
+  .mini-brand .brand-text > span { display: none; }
   .btn-small { padding: 9px 14px; font-size: 0.95rem; white-space: nowrap; }
   .eyebrow { letter-spacing: 0.1em; font-size: 0.78rem; }
 }
@@ -93,7 +93,6 @@ p { margin: 0 0 1em; }
 .print-b { width: 50%; left: 0; bottom: 34px; transform: rotate(-6deg); z-index: 2; }
 .print-c { width: 46%; right: 4%; bottom: 0; transform: rotate(4deg); z-index: 3; }
 .print-c::before { left: 30%; transform: rotate(5deg); }
-.sticker { position: absolute; z-index: 4; width: 150px; left: 6%; top: -6px; transform: rotate(-10deg); filter: drop-shadow(3px 6px 0 rgba(26, 23, 20, 0.15)); }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 8px; text-align: center; }
@@ -101,7 +100,6 @@ p { margin: 0 0 1em; }
   .collage { order: 1; height: min(96vw, 520px); max-width: 560px; width: 100%; margin: 12px auto 0; }
   .intro { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
-  .sticker { width: 104px; left: 0; top: -4px; }
 }
 
 /* Scrolling ribbon of class names */
@@ -294,4 +292,23 @@ details[open] .print-sm { animation: drop 0.35s ease-out; }
   .mini-brand { font-size: 0.98rem; gap: 6px; }
   .mini-brand img { width: 50px; height: 50px; }
   .btn-small { padding: 8px 11px; font-size: 0.88rem; }
+}
+
+/* Hanging sticker logo: the logo hangs off the top bar like a sticker
+   slapped on the poster. (Replaces the old sticker on the photo collage.) */
+.topbar { position: relative; min-height: 96px; }
+.mini-brand { padding-left: 170px; }
+.mini-brand img {
+  position: absolute; z-index: 5; left: 14px; top: 12px; width: 166px; height: 166px;
+  transform: rotate(-8deg); filter: drop-shadow(4px 7px 0 rgba(26, 23, 20, 0.18));
+}
+.hero { padding-top: 56px; }
+@media (max-width: 900px) { .hero { padding-top: 24px; } }
+@media (max-width: 480px) {
+  /* The badge already spells out the name, so the text beside it is
+     kept for screen readers only. */
+  .topbar { min-height: 76px; }
+  .mini-brand { padding-left: 120px; min-height: 60px; }
+  .mini-brand .brand-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .mini-brand img { width: 120px; height: 120px; left: 10px; top: 8px; }
 }
