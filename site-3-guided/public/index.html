@@ -33,6 +33,7 @@
     <nav class="nav" aria-label="Main">
       <a href="#start">Classes</a>
       <a href="#included">What's included</a>
+      <a href="#vip">VIP at home</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn-dark btn-sm" href="#contact">Book a class</a>
@@ -92,6 +93,10 @@
         <button class="choice" role="tab" id="tab-buying" aria-controls="path-buying" aria-selected="false" data-path="buying" tabindex="-1">
           <span class="choice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20.5 20.5-4.9-4.9"/></svg></span>
           <span class="choice-text"><strong>I'm buying a firearm</strong><span>Choose it, file it, learn it</span></span>
+        </button>
+        <button class="choice" role="tab" id="tab-vip" aria-controls="path-vip" aria-selected="false" data-path="vip" tabindex="-1">
+          <span class="choice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></span>
+          <span class="choice-text"><strong>Train me at home</strong><span>VIP in-home classes</span></span>
         </button>
       </div>
 
@@ -218,6 +223,33 @@
             <a class="text-link" href="#included">See everything that's included</a>
           </aside>
         </section>
+
+        <!-- Path: VIP in-home -->
+        <section class="path" id="path-vip" role="tabpanel" aria-labelledby="tab-vip" tabindex="0">
+          <h3 class="path-title">VIP services: we come to you</h3>
+          <ol class="steps steps-one">
+            <li class="step">
+              <span class="step-num">VIP</span>
+              <article class="step-card step-card-featured step-card-wide">
+                <div class="step-photo step-icon-panel" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg>
+                </div>
+                <div class="step-body">
+                  <div class="step-top">
+                    <h4>VIP In-Home Training</h4>
+                    <p class="price">Quote<small>priced per visit</small></p>
+                  </div>
+                  <p class="badge">Any class, at your home</p>
+                  <p>Pick any class we offer and the instructor comes to your home to teach it, on a day that works for you. Private and comfortable, and great for families and groups. Live-fire portions, like Day 2 of the CCW/HGP Class, still take place at the range.</p>
+                  <a class="btn btn-dark btn-sm" href="mailto:right2armsllc@gmail.com?subject=VIP%20in-home%20training%20request">Ask for a VIP quote</a>
+                </div>
+              </article>
+            </li>
+          </ol>
+          <aside class="alt">
+            <p><strong>Which classes?</strong> Any of them: CCW/HGP Prep, CCW/HGP Class, CCW Renewal, HGP Only, Firearm Testing &amp; Selection, and Post-Purchase Familiarity &amp; Cleaning.</p>
+          </aside>
+        </section>
       </div>
     </div>
   </section>
@@ -254,23 +286,49 @@
             <tr><th scope="row">HGP Only</th><td>$150</td></tr>
             <tr><th scope="row">Firearm Testing &amp; Selection</th><td>$100</td></tr>
             <tr><th scope="row">Post-Purchase Familiarity &amp; Cleaning</th><td>$100</td></tr>
+            <tr><th scope="row">VIP In-Home Training <span>Any class, taught at your home</span></th><td>Quote</td></tr>
           </tbody>
         </table>
         <p class="fine">Family and group rates available upon request.</p>
+      </details>
+      <details class="price-list" id="policy">
+        <summary><span>Refund &amp; rescheduling policy</span><span class="chev" aria-hidden="true"></span></summary>
+        <table>
+          <tbody>
+            <tr><th scope="row">Deposits &amp; fees <span>Your deposit and any other fees paid are non-refundable.</span></th><td>No refunds</td></tr>
+            <tr><th scope="row">CCW/HGP Class <span>Reschedule with at least this much notice.</span></th><td>48 hours</td></tr>
+            <tr><th scope="row">Mini classes <span>All other classes. Reschedule with at least this much notice.</span></th><td>24 hours</td></tr>
+          </tbody>
+        </table>
+        <p class="fine">To reschedule, email or message us before the deadline.</p>
       </details>
     </div>
   </section>
 
   <section class="section" aria-labelledby="about-title">
     <div class="wrap">
-      <div class="about-card">
-        <div class="avatar" role="img" aria-label="Instructor photo placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.3-6 8-6s7 2 8 6"/></svg>
+      <div class="section-head">
+        <span class="placeholder-note">Placeholder: client to supply names, photos and bios</span>
+        <h2 id="about-title">Who's teaching</h2>
+        <p>A certified instructor teaches every class, with a range safety officer on the line for live fire.</p>
+      </div>
+      <div class="team">
+        <div class="about-card">
+          <div class="avatar" role="img" aria-label="Instructor photo placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.3-6 8-6s7 2 8 6"/></svg></div>
+          <div>
+            <p class="kicker">Lead instructor</p>
+            <h3>Instructor name</h3>
+            <p>Certifications and a couple of sentences about experience and why Right to Arms exists. A friendly photo goes a long way here.</p>
+            <a class="btn btn-outline btn-sm uscca" href="https://www.usconcealedcarry.com/" rel="noopener">USCCA certified instructor</a><!-- TODO: replace with the instructor's own USCCA link -->
+          </div>
         </div>
-        <div>
-          <span class="placeholder-note">Placeholder: client to supply</span>
-          <h2 id="about-title">Meet your instructor</h2>
-          <p>Name, certifications and a couple of sentences about experience and why Right to Arms exists. First-timers want to know who they'll be learning from, so a friendly photo goes a long way here.</p>
+        <div class="about-card">
+          <div class="avatar" role="img" aria-label="Range safety officer photo placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.3-6 8-6s7 2 8 6"/></svg></div>
+          <div>
+            <p class="kicker">Range safety officer (RSO)</p>
+            <h3>RSO name</h3>
+            <p>Runs the firing line during live fire so every student stays safe. A line about their background goes here.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -284,7 +342,8 @@
           <div>
             <p class="kicker">Ready when you are</p>
             <h2 id="contact-title">Book a class</h2>
-            <p>Email the class you want and a few dates that work. Bringing family or a group? Ask about group rates.</p>
+            <p>Email the class you want and a few dates that work. Bringing family or a group? Ask about group rates. Want it at home? Ask about VIP.</p>
+            <p class="contact-fine">Deposits and fees are non-refundable. <a href="#policy">Rescheduling policy</a></p>
           </div>
           <div class="contact-actions">
             <a class="btn btn-light" href="mailto:right2armsllc@gmail.com?subject=Booking%20request">Email to book</a>
@@ -306,6 +365,7 @@
   <div class="wrap footer-row">
     <img src="/assets/logo-badge.webp" alt="Right to Arms LLC logo" width="48" height="48">
     <p>&copy; 2026 Right to Arms LLC &middot; It's your right, exercise it!</p>
+    <p class="footer-links"><a href="https://www.usconcealedcarry.com/" rel="noopener">USCCA instructor profile</a><!-- TODO: replace with the instructor's own USCCA link --><a href="#policy">Refund &amp; rescheduling policy</a></p>
   </div>
 </footer>
 

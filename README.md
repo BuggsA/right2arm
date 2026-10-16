@@ -6,7 +6,7 @@ Three different designs with the same content, so the client can compare styles 
 | --- | --- | --- | --- |
 | `site-1-classic/` | `1.yourdomain.com` | The mentor's layout, upgraded: tabbed menu, mission-style hero, "Choose your service" banner, photo cards with Book Now. | Each card opens its own class page (`/classes/...`) |
 | `site-2-handmade/` | `2.yourdomain.com` | Handmade poster style from the logo: paper, brush lettering, taped photo prints toned black and orange. One page. | Services list styled as a receipt; tap a row to open its photo and details |
-| `site-3-guided/` | `3.yourdomain.com` | Bright and modern, like a booking app, with full-color photos. One page. | "Where are you starting?" picker shows only the classes for that path |
+| `site-3-guided/` | `3.yourdomain.com` | Bright and modern, like a booking app, with full-color photos. One page. | "Where are you starting?" picker shows only the classes for that path (including VIP at home) |
 
 All three are plain HTML and CSS with no build step and no dependencies. Site 3 uses a small script for the picker, and still works without it.
 
@@ -45,12 +45,25 @@ Booking is done by email for now. Every **Book** button opens an email with the 
 
 In `site-1-classic`, each price and description appears in up to three places: the home page card, `/classes/`, and the class's own page. Update all three when something changes.
 
+### Added in the second round of feedback (all three sites)
+
+- **Bigger company name** in the header.
+- **Who's teaching:** the instructor and the RSO (range safety officer), each with a photo slot, name and short bio. Placeholders until the client sends details.
+- **USCCA link:** a "USCCA certified instructor" button in the instructor's card, plus a footer link. It points to the USCCA home page for now. Search for `TODO: replace with the instructor's own USCCA link` and swap in the real profile link.
+- **VIP in-home training:** any class, taught at the client's home, priced by quote. Site 1 has a home page section and its own page (`/classes/vip-in-home/`); site 2 has a receipt row and a section; site 3 has a fourth "Train me at home" choice in the picker.
+- **Refund & rescheduling policy:** deposits and all other fees are non-refundable; the CCW/HGP Class can be rescheduled with 48 hours' notice and mini classes (every other class) with 24 hours'. Site 1 has a `/refund-policy/` page, a policy box on the home, Classes and Contact pages, and a one-line note in every booking box. Sites 2 and 3 have it near the booking section, and site 3's opens like the price list.
+
+In site 1 the policy wording lives in several places: the home, Classes, Contact and Refund Policy pages, plus the note in each class page's booking box.
+
 ### Still needed from the client
 
-- **About section:** instructor name, photo, certifications and a short bio. It's marked as a placeholder on every site.
+- **Who's teaching:** names, photos, certifications and a short bio for the instructor and the RSO. Marked as a placeholder on every site.
+- **USCCA link:** the instructor's own USCCA profile or instructor page URL.
+- **VIP pricing:** a price or travel fee, or keep it as "quote on request". Also confirm that live fire still happens at the range for VIP clients (the sites say so).
+- **Refund policy:** confirm that CCW Renewal counts as a "mini class" (24 hours' notice). Right now only the CCW/HGP Class needs 48 hours.
 - **Location:** service area and which range is used.
 - **Phone number:** should one be on the site?
 - **HGP Only:** what does it include, and how is it different from the CCW/HGP Class?
 - **Class details:** class lengths and how dates are scheduled.
-- **Photos:** class and range photos, including the instructor. These would replace the stock photos.
+- **Photos:** the client is sending their own photos to replace the stock ones, including the instructor and RSO.
 - **Logo:** the original logo file. The current one was cut from a screenshot.

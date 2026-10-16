@@ -34,4 +34,30 @@
   // Deep links such as /#renew open that path.
   var fromHash = tabs.filter(function (t) { return '#' + t.dataset.path === location.hash; })[0];
   select(fromHash || tabs[0]);
+
+  // In-page links to a path (like the "VIP at home" menu link) switch to it.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!link) return;
+    var tab = tabs.filter(function (t) { return '#' + t.dataset.path === link.getAttribute('href'); })[0];
+    if (!tab) return;
+    e.preventDefault();
+    select(tab);
+    history.replaceState(null, '', '#' + tab.dataset.path);
+    document.getElementById(tab.getAttribute('aria-controls')).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+
+// Links to a collapsed section (like #policy) open it.
+(function () {
+  function openTarget() {
+    var el = location.hash && document.getElementById(location.hash.slice(1));
+    if (el && el.tagName === 'DETAILS') el.open = true;
+  }
+  window.addEventListener('hashchange', openTarget);
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href^="#"]');
+    if (link) setTimeout(function () { var el = document.getElementById(link.getAttribute('href').slice(1)); if (el && el.tagName === 'DETAILS') el.open = true; });
+  });
+  openTarget();
 })();
