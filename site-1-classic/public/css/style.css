@@ -315,6 +315,7 @@ p { margin: 0 0 1em; }
 .book-box .fine { font-size: 0.92rem; color: var(--muted); margin: 8px 0 0; }
 .mini-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
 .mini-grid-6 { grid-template-columns: repeat(6, 1fr); }
+.mini-grid-8 { grid-template-columns: repeat(4, 1fr); }
 .mini { display: block; text-decoration: none; }
 .mini .thumb { aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: var(--ink-2); margin-bottom: 10px; }
 .mini .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
@@ -324,9 +325,9 @@ p { margin: 0 0 1em; }
 @media (max-width: 960px) {
   .detail-grid { grid-template-columns: 1fr; gap: 32px; }
   .book-box { position: static; }
-  .mini-grid, .mini-grid-6 { grid-template-columns: repeat(3, 1fr); }
+  .mini-grid, .mini-grid-6, .mini-grid-8 { grid-template-columns: repeat(3, 1fr); }
 }
-@media (max-width: 600px) { .mini-grid, .mini-grid-6 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .mini-grid, .mini-grid-6, .mini-grid-8 { grid-template-columns: 1fr 1fr; } }
 
 /* Footer */
 .site-footer { background: var(--ink); color: var(--on-dark-muted); padding: 56px 0 32px; font-size: 0.97rem; border-top: 4px solid var(--orange); }
