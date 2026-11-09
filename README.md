@@ -1,4 +1,4 @@
-# Right to Arms LLC: website concepts
+# Right 2 Arms LLC: website concepts
 
 Three different designs with the same content, so the client can compare styles side by side. Each folder is a separate static site deployed as its own Cloudflare Worker on its own subdomain.
 
